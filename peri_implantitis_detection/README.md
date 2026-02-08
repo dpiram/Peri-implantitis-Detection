@@ -62,5 +62,10 @@ YOLOv12 demonstrated improved performance for the dominant and early-stage class
 - Single imaging modality
 - Prospective clinical validation required before clinical use
 
+### Model Output Description
+
+The model outputs bounding boxes corresponding to detected dental implants, along with predicted severity classes and confidence scores. Outputs are designed to support downstream visualization and clinical review rather than automated decision-making.
+
+
 ## Disclaimer
 This project is for research and educational purposes only and is not intended for clinical use.
