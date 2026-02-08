@@ -28,8 +28,23 @@ As a practicing dentist, I observed these diagnostic challenges firsthand, which
 - Implemented in Python using PyTorch and OpenCV
 
 ## Evaluation
-- 80/20 stratified train–test split
-- Metrics prioritized for clinical relevance
+- 80/20 stratified train–test split  
+- Metrics prioritized for clinical relevance  
+
+The following figure shows training and validation losses alongside key detection metrics across epochs.
+
+![Training and Validation Metrics](results/training_metrics.png)
+
+The model demonstrates stable convergence with improving precision, recall, and mAP scores, while validation losses remain controlled, suggesting limited overfitting.
+
+### Model Comparison (YOLOv8 vs YOLOv12)
+
+The following figure compares class-wise mAP@0.5 scores between YOLOv8 and YOLOv12 models across clinical severity classes.
+
+![YOLOv8 vs YOLOv12 mAP@0.5 Comparison](results/yolov8_vs_yolov12_map50.png)
+
+YOLOv12 demonstrated improved performance for the dominant and early-stage classes (Healthy and Grade S), while YOLOv8 showed relatively stronger performance in the advanced disease class. This highlights the importance of class-wise evaluation in clinically imbalanced datasets.
+
 
 **Results:**
 - mAP@0.5: 0.81  
