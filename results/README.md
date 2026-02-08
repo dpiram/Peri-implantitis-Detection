@@ -40,7 +40,8 @@ The model demonstrates stable convergence with improving precision, recall, and 
 
 The following figure compares class-wise mAP@0.5 scores between YOLOv8 and YOLOv12 models across clinical severity classes.
 
-![YOLOv8 vs YOLOv12 mAP@0.5 Comparison](../results/Yolo 8 vs yolo 12.jpeg)
+![YOLOv8 vs YOLOv12 mAP@0.5 Comparison](../results/yolov8_vs_yolov12.jpeg)
+
 
 YOLOv12 demonstrated improved performance for the dominant and early-stage classes (Healthy and Grade S), while YOLOv8 showed relatively stronger performance in the advanced disease class. This highlights the importance of class-wise evaluation in clinically imbalanced datasets.
 
